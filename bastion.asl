@@ -14,9 +14,7 @@ startup
 	settings.Add("langston", true, "Split when entering Prosper");
 	settings.Add("ura", true, "Split after Burstone Quarry");
 	settings.Add("tazal", true, "Split Tazal I");
-	settings.Add("start", true, "Begin Splits");
 	settings.Add("end", true, "End Splits");
-	settings.Add("reset", true, "Auto Reset");
 }
 
 init
@@ -31,13 +29,13 @@ update
 
 start
 {
-	if (settings["start"] && vars.oldLevel.Equals("ProtoIntro01") && old.m_allowInput == 0 && current.m_allowInput == 1)
+	if (vars.oldLevel.Equals("ProtoIntro01") && old.m_allowInput == 0 && current.m_allowInput == 1)
 		return true;
 }
 
 reset
 {
-	if (settings["reset"] && current.m_nextMap.Contains("ProtoIntro01") && !vars.oldLevel.Contains("ProtoIntro01")) {
+	if (current.m_nextMap.Contains("ProtoIntro01") && !vars.oldLevel.Contains("ProtoIntro01")) {
 		vars.oldLevel = "ProtoIntro01";
 		return true;
 	}

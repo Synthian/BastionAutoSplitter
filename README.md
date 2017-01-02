@@ -7,11 +7,22 @@ The autosplitter is currently capable of starting and ending your splits, resett
 
 #### Options (In Layout Component Settings)
 
+**Start** - Toggles automatically starting splits.  
+**Split** - Toggles splitting outside of Starting and Resetting.  
+**Reset** - Toggles automatically resetting.  
+  
 **Split Upon returning to the Bastion** - Toggles splitting everytime you return to the Bastion, UNLESS you just came from the Ura Invasion.  
 **Split Rock in the Sky** - Toggles splitting upon loading the Wharf District Map  
 **Split when entering Prosper** - Toggles splitting when you enter Prosper Bluff. This is only not wanted in Any Weapons, presumably.  
-**Split after Burstone Quarry** - Toggles splitting when loading the Ura Invasion.
+**Split after Burstone Quarry** - Toggles splitting when loading the Ura Invasion.  
 **Split Tazal I** - Toggles splitting when you load the map with the Battering Ram pickup on it.  
-**Begin Splits** - Toggles starting your splits when the kid gets up.
-**End Splits** - Toggles ending your splits upon input being disabled at the end of the game.
-**Auto Reset** - Toggles resetting your splits when you load into the Rippling Walls map.
+**End Splits** - Toggles ending your splits upon input being disabled at the end of the game.   
+
+#### How to Install
+
+Open LiveSplit  
+Edit Layout  
+Add Component -> Control -> Scriptable Auto Splitter  
+Browse to bastion.asl  
+Choose settings  
+Enjoy!  
